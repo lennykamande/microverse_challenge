@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Microverse Challenge</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+            <div class="form">
+                <header>
+                    <h1 id="title">Survey Form</h1>
+                    <p id="description"> This is the microverse challenge!</p>
+                </header>
+            </div>
+            <form id="survey-form" method="POST">
+                <label id="name-label">UserName</label>
+                <input type="text" id="name" placeholder="Please Enter Your Name" required/>
+
+                <label id="email-label">Email Address</label>
+                <input type="email" id="email" placeholder="***@gmail.com" required/>
+
+                <label id="number-label">Mobile</label>
+                <input type="number" id="number" placeholder="Please Enter Your Mobile Number" min="5" max="60"/>
+                
+                <label id="select-label">Select Options</label>
+                <select name="select-label" id="dropdown">
+                    <option value="learning">Verbal</option>
+                    <option value="written">Written</option>
+                    <option value="visual">Visual</option>
+                </select>
+
+                <p>Select a maintenance drone:</p>
+
+                <div>
+                <input type="radio" id="huey" name="drone" value="huey"
+                        checked>
+                <label for="huey">Huey</label>
+                </div>
+
+                <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+                </div>
+
+                <div>
+
+                <fieldset>
+                    <legend>Choose your interest</legend>
+                    <div>
+                        <input type="checkbox" id="coding" name="interest" value="coding">
+                        <label for="coding">Coding</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="music" name="interest" value="music">
+                        <label for="music">Music</label>
+                    </div>
+                </fieldset>
+
+                <label id="additional-comments"></label>
+                <textarea id="textarea" placeholder="Additonal comments">
+
+                </textarea>
+
+                <button id="submit" type="submit"></button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <script src="js/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
